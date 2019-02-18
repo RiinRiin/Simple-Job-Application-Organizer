@@ -30,6 +30,10 @@ module.exports = (app) =>{
         }
     );
 
+    app.get('/', (req, res) => {
+        res.end("This is the home route")
+    });
+
     app.get('/login', (req, res) => {
         //serve or render the login page
         res.sendFile(path.resolve('views/login.html'));

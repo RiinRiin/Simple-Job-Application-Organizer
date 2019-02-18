@@ -2,7 +2,7 @@
 
 const request = require('request-promise');
 
-function listLabels() {        
+function listLabels() {
     request.get('https://www.googleapis.com/gmail/v1/users/me/labels', {
         auth: {
             // point to the accessToken's storage location 
