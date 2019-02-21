@@ -13,4 +13,4 @@ You must setup your own .env file with:
 
 To run: **npm start** to run the react app.
 
-Then node **node index.js** to run the server.
+Then run **node index.js** to run the server.
