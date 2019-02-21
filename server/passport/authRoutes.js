@@ -32,13 +32,14 @@ module.exports = (app) =>{
 
     app.get('/', (req, res) => {
         //serve or render the login page
-        res.sendFile(path.resolve('views/login.html'));
+        // res.sendFile(path.resolve('views/login.html'));
+        res.redirect('http://localhost:3000/');
     });
 
     app.get('/api/logout', (req, res) => {
         req.logout();
         // res.send(req.user);
-        res.redirect('/login');
+        res.redirect('http://localhost:3000/');
     });
 
     app.get('/api/user', (req, res) => {
@@ -50,7 +51,7 @@ module.exports = (app) =>{
             res.end('Authentication successful! Please return to the console.'); //TEMPORARY
         } else {
             // Not authenticated
-            res.redirect('/login');
+            res.redirect('http://localhost:3000/');
         }
     });
 }

@@ -42,7 +42,7 @@ passport.use(
                         done(null, existingUser);
                     } else {
                         // we don't have a user record with this ID, make a new record
-                        new User({ googleId: profile.id, accessToken: accessToken, refreshToken: refreshToken }).save()
+                        new User({ googleId: profile.id, refreshToken: refreshToken }).save()
                             .then(user => done(null, user))
                             .catch(console.error);
                     }
