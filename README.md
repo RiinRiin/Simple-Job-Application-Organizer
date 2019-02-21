@@ -11,5 +11,6 @@ You must setup your own .env file with:
 * MONGO_URI=your mongo uri
 * COOKIE_KEY=anystring
 
-To run: npm start to run the react app
-Then node server/index.js to run the server
+To run: **npm start** to run the react app.
+
+Then node **node index.js** to run the server.
